@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <title>Monitoreo de Basura</title>
+    </head>
+<body>
+    <header class="ancho">
+        <figure>
+            <img src="imagenes/cabecera1.gif" alt="">
+        </figure>
+    </header>
+<hr>
+
+    <!--FECHA-->
+    <section class="fecha ancho">
+      <p>
+        <script type="text/javascript">
+          var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+          var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+          var f=new Date();
+          document.write(diasSemana[f.getDay()] + " " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+        </script>
+      </p>
+    </section>
+
+    <section class="contgrafico">
+        <h1>MONITOR DE BASURA ITM <br>CAMPUS PONIENTE</h1>
+        <div class="creacion ancho">
+            <iframe src="https://thingspeak.com/channels/1907924/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+        </div>
+    </section><br>
+<hr>
+    <footer>
+        <figure>
+            <img src="imagenes/logotec.png" alt="">
+        </figure>
+        <div class="info">
+            <p>Proyecto Final IoT/PDM</p>
+        </div>
+        <div class="info">
+            <p>Intregrantes:</p>
+            <p>Enedi Basto</p>
+            <p>Andrea Canto</p>
+            <p>Eduardo Cauich</p>
+            <p>Luis Loeza</p>
+        </div>
+    </footer>
+
+</body>
+</html>
